@@ -1,0 +1,32 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.texto-menor {
+    font-size: 13px;
+}
+
+.color {
+    color: white
+}
+
+.cardZom {
+    overflow: hidden;
+    transition:  0.25s;
+}
+
+.cardZom img {
+    max-width: 100%;
+}
+
+.cardZom:hover img {
+    transform: scale(1.15);
+}
+
+.CardEfect {
+    transition:  0.25s;
+}
+
+.CardEfect:hover {
+    transform: scale(1.1);
+}

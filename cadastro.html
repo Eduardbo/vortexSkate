@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex - 2.0</title>
+    <!-- CDN bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Iconis bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <rel rel="stylesheet" href="./style.css">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- CSS PURO -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="./fotos/bannerLogo/logoIcom.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img src="./fotos/bannerLogo/logo2.png" alt="Logo Vórtex"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Promoções</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Time</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lista de Desejos</a>
+                  </li>
+                </ul>
+
+                <span class=" bg-black navbar-dark" >
+                    <div class=" navbar-nav">
+
+                        <nav class="navbar">
+                            <div class="container-fluid">
+                                <form class="d-flex " role="search">
+                                <input class="form-control me-2 rounded-0" type="search" placeholder="Buscar Produto" aria-label="Search">
+                                <button class="btn btn-dark " type="submit"><i class="bi bi-search"></i></button>
+                              </form>
+                            </div>
+                          </nav>
+
+                     <button class="nav-link active " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="bi bi-person fs-4"> </i> </button>
+
+                      <button class="nav-link active" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight-2" aria-controls="offcanvasRight">
+                        <i class="bi bi-bag fs-5"> </i> </button>
+
+                   </div>
+                 </span>
+            </div>
+        </nav>
+    </header>
+    
+<!-- Perfil -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel"><i class="bi bi-person fs-4"> </i>Login</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Lembre-me depois</label>
+            </div>
+            <button type="submit" class="btn btn-dark">Iniciar Sessão</button>
+            <div><br>
+                <div>Não possui uma conta?<a href="#" class="link-dark"> Cadastre-se</a></div> 
+            </div>
+            
+          </form>
+    </div>
+  </div>
+<!-- Perfil -->
+    
+<!-- SACOLA -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel"><i class="bi bi-bag fs-5"> </i>Sacola</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+
+        <hr>
+       <ul class="">
+        <li>
+            1
+        </li>
+        <li>
+            2
+        </li>
+       </ul> 
+
+      </div>
+    </div>
+  </div>
+<!-- SACOLA -->
+
+
+<!-- NAVBAR -->
+<br><br>
+<section class=" my-5 py5 container">
+    <div class="border border-2 rounded p-3">
+        <h3 class="fw-bold p-3">cadastro</h3>
+        <form>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                <label for="floatingNome">Nome Completo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                <label for="floatingEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+                <label for="floatingTelefone">Telefone</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                <label for="floatingPassword">Senha</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingConfirmaSenha" placeholder="Confirmar Senha">
+                <label for="floatingConfirmaSenha">Confirmar Senha</label>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Cadastrar</button>
+            <div><br>
+                <div>Já possui uma conta?<a href="#" class="link-dark">Iniciar Sessão</a></div> 
+            </div>
+
+        </form>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<br><br>
+<footer class=" bg-black py-3 texto-menor text-center ">
+
+  <IconsLink class="m-3 p-2 d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3">
+      <p class="fs-5"><a class="link-light" href="https://www.instagram.com/vidaskateshop_/" target="_blank"> <i class="bi bi-instagram"> </i> </a> </p>
+      <p class="fs-5"><a class="link-light" href="#"> <i class="bi bi-facebook"> </i> </a> </p>
+      <p class="fs-5">
+        <a class="link-light" href="https://wa.me/5592996089058?text=Ol%C3%A1%2C+entrando+em+contato+atrav%C3%A9s+do+site+V%C3%B3rtex+SkateShop" target="_blank"> <i class="bi bi-whatsapp"> </i> </a> </p>
+  </IconsLink>
+
+  <div class="my-3">
+      <p class="color texto-menor">VTX COMPANY LTDA <i class="bi bi-c-circle"></i> - CNPJ 00.000.000/0000-00</p>
+      <P class="color texto-menor">Rua Brasil, 1500 - Brasil/BR</P>
+      <p class="color texto-menor"> <i class="bi bi-c-circle"></i>Todos os direitos reservados | Desolvido por Eduardo </p>
+ </div>
+</footer>
+
+</footer>
+<!-- FOOTER --> 
+   
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
